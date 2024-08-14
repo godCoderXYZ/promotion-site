@@ -1,9 +1,15 @@
 import './App.css';
+import VideoPlayer from 'react-video-js-player';
+
+const nextwaveLogo1 = require('./nextwave-logo1.png');
+
 
 function App() {
+
   return (
     <div className="App">
       <div className="desktop">
+
         <header className="header-section">
           <div id="top-left-header-text" class="header-text">
             <p>Become a website developer.</p>
@@ -36,6 +42,23 @@ function App() {
           </div>
 
         </header>
+
+        <div class="hero-section">
+            <img class="nextwave-hackers-icon" id="nextwave-hackers-icon1" src={nextwaveLogo1} alt="NextWave Hackers Logo"/>
+            <p class="hero-section-body-text">Forerunners on the <b>next wave</b> of innovation and technology</p>
+        </div>
+
+        <div class="scrolling-marquee-bg">
+              <p class="scrolling-marquee-text">Become a website developer. Become a game developer. Become an engineer. Become a data scientist. Become a physicist. Become an entrepreneur.</p>
+        </div>
+
+        <video
+            class="promotion-video"
+            src='https://ik.imagekit.io/ikmedia/example_video.mp4'
+            width='1209'
+            height='652'
+            controls
+        />
       </div>
     </div>
   );

@@ -16,11 +16,13 @@
 }
 
 .header-section {
+  position: relative;
+
   background-color: #191934;
   height: 610px;
   width: 100%;
 
-  position: relative;
+  border-bottom: 4px solid #ffffff99;
 }
 
 .header-text {
@@ -59,4 +61,88 @@
   right: 0px;
 
   white-space: pre;
+}
+
+.hero-section {
+  position:relative;
+
+  width: 100%;
+  height: 886px;
+
+  background-image: url("hero-selection-image.png");
+
+  /* border: 5px solid white;
+  box-sizing: border-box; */
+
+}
+
+.nextwave-hackers-icon {
+  width: 744px;
+  height: 582.06px;
+}
+
+#nextwave-hackers-icon1 {
+  position: absolute;
+
+  margin: 0 auto;
+
+  top: 84px;
+  left: 0px;
+  right: 0px;
+}
+
+.hero-section-body-text {
+  position: absolute;
+
+  font-family: "Inter", sans-serif;
+
+  left: 0px;
+  right: 0px;
+  bottom: 84px;
+}
+
+.scrolling-marquee-bg {
+  position: relative;
+
+  width: 100%;
+  height: 120px;
+
+  background-color: #00000080;
+
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.scrolling-marquee-text {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  
+  line-height: 120px;
+
+  text-align: center;
+  margin: 0;
+
+  font-family: "Major Mono Display", monospace;
+  color: #6693FF;
+  font-size: 45px;
+
+  animation: scrolling-marquee-anim 20s linear 0s infinite normal none;
+}
+
+@keyframes scrolling-marquee-anim {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(-300%);}
+}
+
+.promotion-video {
+  margin-top:89px;
+
+  border: 10px solid white;
+  border-radius: 25px;
+
+  box-sizing: border-box;
+
+  background-color: #FFFFFFCC;
 }
