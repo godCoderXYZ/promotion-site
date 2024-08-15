@@ -1,7 +1,8 @@
 import './App.css';
 import VideoPlayer from 'react-video-js-player';
 
-const nextwaveLogo1 = require('./nextwave-logo1.png');
+import treeImage from './tree.png';
+import nextwaveLogo1 from './nextwave-logo1.png';
 
 
 function App() {
@@ -85,6 +86,17 @@ function App() {
             </p>
           </div>
 
+        </div>
+
+        <div class="branch-intro">
+          <img id="tree-image" src={treeImage} alt="Tree"/>
+          <p id="branch-intro-body">
+            <span style={{fontSize: "36px", fontWeight: "normal"}}>Learning Programming is like <b>climbing a tree. </b></span>
+            <span style={{fontSize: "34.88px", fontWeight: "normal"}}><br/><br/></span>
+            There are so many different aspects and skills of programming to learn, so many pathways to explore, and so many applications of programming in the real-world today.
+            <span style={{fontSize: "34.88px"}}><br/><br/></span>
+            We call these aspects <b>BRANCHES</b>.
+          </p>
         </div>
       </div>
     </div>

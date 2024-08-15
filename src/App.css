@@ -237,3 +237,48 @@
   margin-top: 15px;
   height: 263px;
 }
+
+.branch-intro {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 89px;
+  
+  width: 100%;
+  height: 495px;
+
+  background-color: #0000004D;
+}
+
+#tree-image {
+  position: relative;
+  
+  display: inline-block;
+
+  height: 331.92px;
+  width: 278.79px;
+
+  margin-left: 171.68px;
+  margin-right: auto;
+}
+
+#branch-intro-body {
+  position: relative;
+
+  display: inline-block;
+
+  height: 311.63px;
+  width: 752.85px;
+
+  margin-left: auto;
+  margin-right: 171.68px;
+
+  text-align: left;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 30.85px;
+  font-weight: 300;
+}
