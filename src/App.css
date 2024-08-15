@@ -9,7 +9,7 @@
 
 .desktop {
   background: linear-gradient(#292E49, #536976);
-  min-height: 500vh;
+  min-height: 7018px;
   display: block;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -46,7 +46,7 @@
 
 #bottom-header-text {
   position: absolute;
-  bottom: 5px;
+  bottom: 46px;
   left: 0px;
   right: 0px;
   white-space: pre;
@@ -109,7 +109,7 @@
 
   background-color: #00000080;
 
-  overflow: visible;
+  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -133,11 +133,31 @@
 
 @keyframes scrolling-marquee-anim {
   0% {transform: translateX(100%);}
-  100% {transform: translateX(-300%);}
+  100% {transform: translateX(-350%);}
+}
+
+.introduction-section {
+  position: relative;
+
+  margin-top:89px;
+
+  width: 1243px;;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Roboto", sans-serif;
+  text-align: left;
 }
 
 .promotion-video {
-  margin-top:89px;
+  position: relative;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1209px;
+  height: 652px;
 
   border: 10px solid white;
   border-radius: 25px;
@@ -145,4 +165,75 @@
   box-sizing: border-box;
 
   background-color: #FFFFFFCC;
+}
+
+.introduction {
+  position: relative;
+
+  margin-top: 69px;
+}
+
+#introduction-header {
+  font-weight: bold;
+
+  font-size: 50px;
+}
+
+.body-text1 {
+  position: relative;
+
+  /* width: 100%; */
+
+  /* vertical-align: middle; */
+
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+#introduction-body {
+  margin-top: 20px;
+  height: 280px;
+}
+
+.objectives {
+  position: relative;
+
+  margin-top: 69px;
+
+  margin-left: 0px;
+  margin-right: auto;
+
+  width: 695.14px;
+}
+
+.header-text1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/* #objectives-header {
+  font-weight: bold;
+  font-size: 36px;
+} */
+
+#objectives-body {
+  margin-top: 15px;
+  height: 220px;
+}
+
+.hackers-definition {
+  position: relative;
+
+  margin-top: 112px;
+
+  margin-left: auto;
+  margin-right: 0px;
+
+  width: 676.29px;
+}
+
+#hackers-definition-body {
+  margin-top: 15px;
+  height: 263px;
 }

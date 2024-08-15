@@ -51,14 +51,41 @@ function App() {
         <div class="scrolling-marquee-bg">
               <p class="scrolling-marquee-text">Become a website developer. Become a game developer. Become an engineer. Become a data scientist. Become a physicist. Become an entrepreneur.</p>
         </div>
+        
+        <div class="introduction-section">
+          {/* change to better video player in the future: https://www.geeksforgeeks.org/how-to-create-video-player-in-reactjs/ */}
+          <video
+              class="promotion-video"
+              src='https://ik.imagekit.io/ikmedia/example_video.mp4'
+              width='1209'
+              height='652'
+              controls
+          />
 
-        <video
-            class="promotion-video"
-            src='https://ik.imagekit.io/ikmedia/example_video.mp4'
-            width='1209'
-            height='652'
-            controls
-        />
+          <div class="introduction">
+            <p id="introduction-header">NextWave Hackers 💻</p>
+            <p class="body-text1" id="introduction-body">
+              A student-led, student-driven club that aims to inspire students to harness technology and innovation to cultivate their ideas and abilities, while simultaneously contributing to real-world issues.
+              <br/><br/>
+              We aim to build a student community for passionate innovators, providing them with guidance and resources to collaborate, develop, and explore different branches of computer science while raising awareness of the importance of information literacy and development in VSA to build the future generation. 
+            </p>
+          </div>
+
+          <div class="objectives">
+            <p class="header-text1">Our Objective ⭐️</p>
+            <p class="body-text1" id="objectives-body">
+              Our objective is to create and foster a student community centered around applying programming and coding in real-world scenarios. We aim to promote innovation, develop projects, and highlight the importance of creativity in STEM fields of VSA.
+            </p>
+          </div>
+
+          <div class="hackers-definition">
+            <p class="header-text1">What are “Hackers”? 🥷🏻</p>
+            <p class="body-text1" id="hackers-definition-body">
+              In our club, we define "hackers" as individuals who employ creative and ingenious methods to discover innovative solutions. Essentially, we view hacking as the process of identifying effective, logical, and inventive solutions to problems within our community and globally, much like the concept of technical hacking.
+            </p>
+          </div>
+
+        </div>
       </div>
     </div>
   );
