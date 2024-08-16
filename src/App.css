@@ -167,6 +167,39 @@
   background-color: #FFFFFFCC;
 }
 
+.video-responsive {
+  position: relative;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1209px;
+  height: 652px;
+
+  border: 10px solid white;
+  border-radius: 25px;
+
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+
+  /* overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; */
+}
+
+.video-responsive iframe {
+  /* left: 0;
+  top: 0; */
+  width: 1189px;
+  height: 632px;
+  position: relative;
+  border: 0px;
+  border-radius: 25px;
+}
+
 .introduction {
   position: relative;
 

@@ -1,5 +1,6 @@
 import './App.css';
-import VideoPlayer from 'react-video-js-player';
+
+import YoutubeEmbed from "./YoutubeEmbed";
 
 import treeImage from './tree.png';
 import nextwaveLogo1 from './nextwave-logo1.png';
@@ -55,13 +56,14 @@ function App() {
         
         <div class="introduction-section">
           {/* change to better video player in the future: https://www.geeksforgeeks.org/how-to-create-video-player-in-reactjs/ */}
-          <video
+          {/* <video
               class="promotion-video"
               src='https://ik.imagekit.io/ikmedia/example_video.mp4'
               width='1209'
               height='652'
               controls
-          />
+          /> */}
+          <YoutubeEmbed embedId="rokGy0huYEA"/>
 
           <div class="introduction">
             <p id="introduction-header">NextWave Hackers 💻</p>
