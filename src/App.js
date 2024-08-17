@@ -131,6 +131,21 @@ function App() {
             </div>
 
         </div>
+
+        <div class="call-to-action">
+
+          <p id="join-us-header-info">Join Us Today</p>
+          <p id="club-duration-info">October 2024 - May 2025</p>
+          
+          <img id="call-to-action-next-wave-logo" src={nextwaveLogo1} alt="NextWave Hackers Logo"/>
+
+          <p id="other-inquires-info">
+            For other inquiries, feel free to send us an email:
+            <br/>
+            <a id="email-link" href="mailto:ps20133177@student.vsa.edu.hk" target="_blank">ps20133177@student.vsa.edu.hk</a> (Chairperson)
+          </p>
+
+        </div>
       </div>
     </div>
   );

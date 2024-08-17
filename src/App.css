@@ -9,7 +9,7 @@
 
 .desktop {
   background: linear-gradient(#292E49, #536976);
-  min-height: 8000px;
+  min-height: 8400px;
   display: block;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -325,6 +325,7 @@
   margin-right: auto;
 
   width: 1260px;
+  height: auto;
 }
 
 .branch-introducing {
@@ -363,7 +364,7 @@
 }
 
 .branch-labels {
-  position: absolute;
+  position: relative;
 
   width: 550px;
 
@@ -411,3 +412,74 @@
   text-align: left;
 }
 
+.call-to-action {
+  position: relative;
+
+  margin-top: 200px;
+
+  width: 1000px;
+  height: 720px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 100px;
+
+  background-image: linear-gradient(to right, #002A5A66 0%, #002A5A66 35%, #61C8EB66 100%);
+
+  opacity: 80%;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: auto;
+
+  text-align: center;
+}
+
+#join-us-header-info {
+  position: relative;
+
+  top: 45px;
+
+  width: 100%;
+  height: 58px;
+
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#club-duration-info {
+  position: relative;
+  
+  margin-top: calc(7px + 45px); /* 45px is the top of the join-us-header-info <p>, because club-duration-info is relative to the call-to-action <div> and doesn't account for the top of the join-us-heaer-info, so it has to be manually accounted for. <p>*/
+
+  width: 100%;
+  height: 29px;
+}
+
+#call-to-action-next-wave-logo {
+  position: relative;
+
+  margin-top: 48px;
+
+  width: 482px;
+  height: 377px;
+}
+
+#other-inquires-info {
+  position: relative;
+
+  margin-top: 48px;
+
+  width: 100%;
+  height: 58px;
+}
+
+#email-link {
+  color: white;
+}
+
+#email-link:hover {
+  font-weight: bold;
+}
