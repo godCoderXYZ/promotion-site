@@ -4,6 +4,7 @@ import YoutubeEmbed from "./YoutubeEmbed";
 
 import treeImage from './tree.png';
 import nextwaveLogo1 from './nextwave-logo1.png';
+import treeBranchImage from './tree-branch.png';
 
 
 function App() {
@@ -99,6 +100,36 @@ function App() {
             <span style={{fontSize: "34.88px"}}><br/><br/></span>
             We call these aspects <b>BRANCHES</b>.
           </p>
+        </div>
+
+        <div class="individual-branch-intro">
+            <p class="branch-introducing">Introducing</p>
+
+            <div class="branches">
+              <img id="tree-branch-img" src={treeBranchImage} alt="Tree Branches"/>
+
+              <div class="branch-labels">
+                <p class="branch-intro-individual-header">Website and Application Development</p>
+                <p class="branch-intro-individual-description">hi</p>
+
+                <p class="branch-intro-individual-header">Game Development and Theory</p>
+                <p class="branch-intro-individual-description">
+                  This branch provides students the opportunity to channel their <b>imagination</b> into <b>real</b> games that can be shared and played by others, extending their creativity into something tangible and realistic.
+                </p>
+                
+                <p class="branch-intro-individual-header">STEAM Education</p>
+                <p class="branch-intro-individual-description">hi</p>
+                
+                <p class="branch-intro-individual-header">Girls4Girls Coding</p>
+                <p class="branch-intro-individual-description">hi</p>
+                
+                <p class="branch-intro-individual-header">Cybersecurity and Ethical Hacking</p>
+                <p class="branch-intro-individual-description">hi</p>
+
+              </div>
+
+            </div>
+
         </div>
       </div>
     </div>
