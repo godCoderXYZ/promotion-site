@@ -5,14 +5,19 @@
 
 .App {
   text-align: center;
+
+  background-color: black;
 }
 
 .desktop {
   background: linear-gradient(#292E49, #536976);
-  min-height: 8400px;
+  min-height: 8700px;
   display: block;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  max-width: 98%;
+  margin: auto;
 }
 
 .header-section {
@@ -28,6 +33,8 @@
 .header-text {
   font-family: 'Courier New', Courier, monospace;
   font-size: 26.26px;
+
+  overflow: hidden;
 }
 
 #top-left-header-text {
@@ -35,6 +42,10 @@
 
   top: 35px;
   left: 41px;
+
+  max-width: auto;
+
+  overflow: hidden;
 }
 
 #top-right-header-text {
@@ -42,6 +53,89 @@
 
   top: 35px;
   right: 41px;
+
+  max-width: auto;
+
+  overflow: hidden;
+}
+
+.header-text-div1 {
+  /* overflow: hidden;
+  max-height: 35.53px;
+  max-width: 50%; */
+}
+
+/* .header-text-div2 {
+  position: relative;
+  overflow: hidden;
+
+  max-height: 350.53px;
+  max-width: 100%;
+
+  top: 35px;
+  right: 41px;
+  margin-right: 0px;
+  margin-left: auto;
+
+  margin-left: calc(100% - 410px);
+  margin-right: 41px;
+  
+  right: 41px;
+  left: auto;
+
+
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+} */
+
+/* #top-left-header-text p {
+  max-height: 35.53px;
+  max-width:50%;
+  overflow: hidden;
+} */
+
+#top-right-header-text p {
+  /* position: absolute;
+  right: 41px;
+  transform: translateX(100%); */
+
+
+
+  /* ==> display: inline-block; <== */
+
+
+
+  /* overflow: hidden;
+  white-space: nowrap; */
+
+  /* width: 50%; */
+}
+
+/* .left-header-anim-text1 {
+  animation: header-anim-slide1 2s linear 0s infinite normal none;
+}
+
+.right-header-anim-text1 {
+  animation: header-anim-slide1 2s linear 0s infinite reverse none;
+}
+
+.left-header-anim-text2 {
+  animation: header-anim-slide1 2s linear 0s infinite normal none;
+}
+
+.right-header-anim-text2 {
+  animation: header-anim-slide1 2s linear 0s infinite reverse none;
+} */
+
+@keyframes header-anim-slide1 {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(100%);}
+}
+
+@keyframes header-anim-slide2 {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(200%);}
 }
 
 #bottom-header-text {
@@ -64,7 +158,7 @@
 
   font-weight: 550;
 
-  animation: header-section-anim 2s linear 2s infinite normal none;
+  /* animation: header-section-anim 2s linear 2s infinite normal none; */
 }
 
 @keyframes header-section-anim {
@@ -151,7 +245,8 @@
 
   margin-top:89px;
 
-  width: 1243px;;
+  /* width: 1243px; */
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 
@@ -214,6 +309,14 @@
   position: relative;
 
   margin-top: 69px;
+
+  background-color: #4C4C4C;
+
+  padding-left: 98px;
+  padding-right: 98px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 #introduction-header {
@@ -242,12 +345,25 @@
 .objectives {
   position: relative;
 
+  padding-left: 98px;
+  padding-right: 42.86px;
+
+  padding-top: 36px;
+  padding-bottom: 31px;
+
   margin-top: 69px;
 
   margin-left: 0px;
   margin-right: auto;
 
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
   width: 695.14px;
+
+  color: black;
+
+  background-color: #CECECE;
 }
 
 .header-text1 {
@@ -263,22 +379,55 @@
 #objectives-body {
   margin-top: 15px;
   height: 220px;
+
+  display: flex;
+  align-items: center;
 }
 
 .hackers-definition {
   position: relative;
+
+  padding-left: 46.71px;
+  padding-right: 131px;
+
+  padding-top: 38px;
+  padding-bottom: 38px;
 
   margin-top: 112px;
 
   margin-left: auto;
   margin-right: 0px;
 
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+
   width: 676.29px;
+
+  background-color: #23324C;
 }
 
 #hackers-definition-body {
   margin-top: 15px;
   height: 263px;
+
+  display: flex;
+  align-items: center;
+}
+
+.objectives-icon, .hackers-definition-icon {
+  position: absolute;
+
+  transform: scale(25%);
+}
+
+.objectives-icon {
+  left: 400px;
+  bottom: -550px;
+}
+
+.hackers-definition-icon {
+  right: 400px;
+  bottom: -520px;
 }
 
 .branch-intro {
@@ -329,27 +478,28 @@
 .individual-branch-intro {
   position: relative;
   
-  margin-top: 90px;
+  margin-top: 89px;
 
   margin-left: auto;
   margin-right: auto;
 
-  width: 1260px;
+  /* width: 1260px; */
+  width: 100%;
   height: auto;
 }
 
-.branch-introducing {
+.our-branches {
   position: relative;
 
   width: 100%;
   height: 58px;
 
-  font-family: "Inter", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 100px;
   line-height: auto;
 
-  text-align: left;
+  text-align: center;
 }
 
 .branches {
@@ -357,10 +507,132 @@
 
   display: inline-block;
 
-  margin-top: 50px;
+  margin-top: calc(76px + 58px);
 
   width: 100%;
   height: auto;
+}
+
+.l-branch-block, .r-branch-block {
+  position: relative;
+
+  width: 807px;
+  height: 204px;
+
+  background-color: #2B3442;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 52px;
+
+  text-align: center;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-branch-block:hover, .r-branch-block:hover {
+  background-color: #212d41;
+  cursor: pointer;
+}
+
+#branch-block-1:hover ~ #branch-description-1 {
+  transform: translateY(0%) scaleX(100%) scaleY(100%);
+}
+
+#branch-block-2:hover ~ #branch-description-2 {
+  transform: translateY(0%) scaleX(100%) scaleY(100%);
+}
+
+#branch-block-3:hover ~ #branch-description-3 {
+  transform: translateY(0%) scaleX(100%) scaleY(100%);
+}
+
+#branch-block-4:hover ~ #branch-description-4 {
+  transform: translateY(0%) scaleX(100%) scaleY(100%);
+}
+
+#branch-block-5:hover ~ #branch-description-5 {
+  transform: translateY(0%) scaleX(100%) scaleY(100%);
+}
+
+.r-branch-block {
+  margin-left: auto;
+  margin-right: 0px;
+
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.l-branch-block {
+  margin-left: 0px;
+  margin-right: auto;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.r-branch-block p {
+  width: 619px;
+  
+  margin-left: 47px;
+  margin-right: auto;
+}
+
+.l-branch-block p {
+  width: 619px;
+
+  margin-left: auto;
+  margin-right: 47px;
+}
+
+.r-branch-description, .l-branch-description {
+  position: relative;
+
+  width: 704px;
+
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+
+  text-align: left;
+
+  margin-top: 65px;
+  margin-bottom: 100px;
+
+  transform: translateY(-100%) scaleX(50%) scaleY(0%);
+  transition: all 0.4s ease-in-out;
+}
+
+.r-branch-description {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.l-branch-description {
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.r-branch-icon, .l-branch-icon {
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  transform: translateY(-100%);
+}
+
+.r-branch-icon {
+  right: 60px;
+  left: auto;
+}
+
+.l-branch-icon {
+  right: auto;
+  left: 60px;
 }
 
 #tree-branch-img {
