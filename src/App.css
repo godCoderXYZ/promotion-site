@@ -61,6 +61,16 @@
   right: 0px;
 
   white-space: pre;
+
+  font-weight: 550;
+
+  animation: header-section-anim 2s linear 2s infinite normal none;
+}
+
+@keyframes header-section-anim {
+  0% {color: white;}
+  25% {color: green;}
+  50% {color: white;}
 }
 
 .hero-section {
