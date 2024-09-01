@@ -11,7 +11,7 @@
 
 .desktop {
   background: linear-gradient(#292E49, #536976);
-  min-height: 8700px;
+  min-height: 9000px;
   display: block;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -531,10 +531,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  box-shadow: 4px 8px 5px black;
 }
 
 .l-branch-block:hover, .r-branch-block:hover {
   background-color: #212d41;
+  box-shadow: 2px 4px 5px black;
   cursor: pointer;
 }
 
@@ -717,6 +720,8 @@
   line-height: auto;
 
   text-align: center;
+
+  border: 10px solid #36bbe866;
 }
 
 #join-us-header-info {
