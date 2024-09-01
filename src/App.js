@@ -6,7 +6,7 @@ import YoutubeEmbed from "./YoutubeEmbed";
 
 import treeImage from './tree.png';
 import nextwaveLogo1 from './nextwave-logo1.png';
-import treeBranchImage from './tree-branch.png';
+// import treeBranchImage from './tree-branch.png';
 
 import branch1Icon from './branch1icon.png';
 import branch2Icon from './branch2icon.png';
@@ -181,10 +181,10 @@ function App() {
           <img id="tree-image" src={treeImage} alt="Tree"/>
           <p id="branch-intro-body">
             <span style={{fontSize: "36px", fontWeight: "normal"}}>Learning Programming is like <b>climbing a tree. </b></span>
-            <span style={{fontSize: "34.88px", fontWeight: "normal"}}><br/><br/></span>
+            <span style={{fontSize: "20px", fontWeight: "normal"}}><br/><br/><br/></span>
             There are so many different aspects and skills of programming to learn, so many pathways to explore, and so many applications of programming in the real-world today.
-            <span style={{fontSize: "34.88px"}}><br/><br/></span>
-            We call these aspects <b>BRANCHES</b>.
+            <span style={{fontSize: "25px"}}><br/><br/><br/></span>
+            We call these aspects <b>BRANCHES</b>.<br/>
           </p>
         </div>
 
@@ -228,8 +228,8 @@ function App() {
 
               <img class="l-branch-icon" src={branch3Icon} alt="Branch 3 Icon"/>
 
-              <div className="l-branch-block" id="branch-block-4" style={{width:"656px", backgroundColor:"#50008A99"}}>
-                <p style={{width:"471px"}}>
+              <div className="l-branch-block" id="branch-block-4" style={{width:"356px", backgroundColor:"#50008A99"}}>
+                <p style={{width:"200px"}}>
                   Bloom
                 </p>
               </div>

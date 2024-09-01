@@ -16,7 +16,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 
-  max-width: 98%;
+  max-width: 95%;
   margin: auto;
 }
 
@@ -312,17 +312,19 @@
 
   background-color: #4C4C4C;
 
-  padding-left: 98px;
-  padding-right: 98px;
+  padding-left: 148px;
+  padding-right: 148px;
 
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 #introduction-header {
+  margin-top: 30px;
+  
   font-weight: bold;
 
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .body-text1 {
@@ -332,20 +334,25 @@
 
   /* vertical-align: middle; */
 
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 35px;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 45px;
 }
 
 #introduction-body {
   margin-top: 20px;
-  height: 280px;
+  margin-bottom: 20px;
+
+  height: 300px;
+
+  display: flex;
+  align-items: center;
 }
 
 .objectives {
   position: relative;
 
-  padding-left: 98px;
+  padding-left: 148px;
   padding-right: 42.86px;
 
   padding-top: 36px;
@@ -359,7 +366,7 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 
-  width: 695.14px;
+  width: 580px;
 
   color: black;
 
@@ -368,7 +375,7 @@
 
 .header-text1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 /* #objectives-header {
@@ -388,7 +395,7 @@
   position: relative;
 
   padding-left: 46.71px;
-  padding-right: 131px;
+  padding-right: 148px;
 
   padding-top: 38px;
   padding-bottom: 38px;
@@ -401,7 +408,7 @@
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 
-  width: 676.29px;
+  width: 550px;
 
   background-color: #23324C;
 }
@@ -452,7 +459,7 @@
   height: 331.92px;
   width: 278.79px;
 
-  margin-left: 171.68px;
+  margin-left: 120px;
   margin-right: auto;
 }
 
@@ -465,13 +472,13 @@
   width: 752.85px;
 
   margin-left: auto;
-  margin-right: 171.68px;
+  margin-right: 120px;
 
   text-align: left;
 
   font-family: "Roboto", sans-serif;
 
-  font-size: 30.85px;
+  font-size: 28px;
   font-weight: 300;
 }
 
@@ -516,14 +523,14 @@
 .l-branch-block, .r-branch-block {
   position: relative;
 
-  width: 807px;
-  height: 204px;
+  width: 507px;
+  height: 150px;
 
   background-color: #2B3442;
 
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 52px;
+  font-size: 34px;
 
   text-align: center;
   overflow: hidden;
@@ -532,16 +539,16 @@
   justify-content: center;
   align-items: center;
 
-  box-shadow: 4px 8px 5px black;
+  box-shadow: 4px 6px 5px black;
 }
 
-.l-branch-block:hover, .r-branch-block:hover {
+/* .l-branch-block:hover, .r-branch-block:hover {
   background-color: #212d41;
   box-shadow: 2px 4px 5px black;
   cursor: pointer;
-}
+} */
 
-#branch-block-1:hover ~ #branch-description-1 {
+/* #branch-block-1:hover ~ #branch-description-1 {
   transform: translateY(0%) scaleX(100%) scaleY(100%);
 }
 
@@ -559,11 +566,14 @@
 
 #branch-block-5:hover ~ #branch-description-5 {
   transform: translateY(0%) scaleX(100%) scaleY(100%);
-}
+} */
 
 .r-branch-block {
   margin-left: auto;
   margin-right: 0px;
+
+  padding-left: 50px;
+  padding-right: 150px;
 
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -572,6 +582,9 @@
 .l-branch-block {
   margin-left: 0px;
   margin-right: auto;
+
+  padding-left: 150px;
+  padding-right: 50px;
 
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -594,19 +607,20 @@
 .r-branch-description, .l-branch-description {
   position: relative;
 
-  width: 704px;
+  width: 504px;
 
   font-family: 'Syne', sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 40px;
 
   text-align: left;
 
   margin-top: 65px;
   margin-bottom: 100px;
 
-  transform: translateY(-100%) scaleX(50%) scaleY(0%);
-  transition: all 0.4s ease-in-out;
+  /* transform: translateY(-100%) scaleX(50%) scaleY(0%);
+  transition: all 0.4s ease-in-out; */
 }
 
 .r-branch-description {
