@@ -26,6 +26,13 @@ function App() {
 
   let headerAnimText = [[useState("Become a website developer. "), useState("Become a game developer. "), useState("Become a data scientist. "), useState("Become an engineer. "), useState("Become an entrepreneur. "), useState("Expand your imagination. ")], [useState("Coding is the tool. You are the innovator. "), useState("Coding is the tool. You are the creator. "), useState("Coding is the tool. You are the designer. "), useState("Coding is the tool. You are the limit. ")], [useState(" _   _           _ __        __                _   _            _                 "), useState("| \\ | | _____  _| |\\ \\      / /_ ___   _____  | | | | __ _  ___| | _____ _ __ ___ "), useState("|  \\| |/ _ \\ \\/ / __\\ \\ /\\ / / _` \\ \\ / / _ \\ | |_| |/ _` |/ __| |/ / _ \\ '__/ __|"), useState('| |\\  |  __/>  <| |_ \\ V  V / (_| |\\ V /  __/ |  _  | (_| | (__|   <  __/ |  \\__ \\'), useState("|_| \\_|\\___/_/\\_\\\\__| \\_/\\_/ \\__,_| \\_/ \\___| |_| |_|\\__,_|\\___|_|\\_\\___|_|  |___/")]]
 
+  const [callToActionPopupClasname, setCallToActionPopupClassname] = useState("call-to-action-popup-show");
+
+  const closeCallToActionPopup = () => {
+    alert("You Can Only Click this Button If You Will Join the Club. No backing out now. We will know.");
+    setCallToActionPopupClassname("call-to-action-popup-hide");
+  };
+
   // function shiftStrings(strings){
   //   for (let i=0; i<strings.length; i++){
   //     for (let j=0; j<strings[i].length; j++){
@@ -115,11 +122,17 @@ function App() {
           </div>
 
           <div id="ascii-header-text" className="header-text">
-            <p>{headerAnimText[2][0][0]}</p>
+            <p>     _       _         _   _       _____         _             </p>
+            <p>    | | ___ (_)_ __   | | | |___  |_   _|__   __| | __ _ _   _ </p>
+            <p> _  | |/ _ \| | '_ \  | | | / __|   | |/ _ \ / _` |/ _` | | | |</p>
+            <p>| |_| | (_) | | | | | | |_| \__ \   | | (_) | (_| | (_| | |_| |</p>
+            <p> \___/ \___/|_|_| |_|  \___/|___/   |_|\___/ \__,_|\__,_|\__, |</p>
+            <p>                                                         |___/</p>
+            {/* <p>{headerAnimText[2][0][0]}</p>
             <p>{headerAnimText[2][1][0]}</p>
             <p>{headerAnimText[2][2][0]}</p>
             <p>{headerAnimText[2][3][0]}</p>
-            <p>{headerAnimText[2][4][0]}</p>
+            <p>{headerAnimText[2][4][0]}</p> */}
           </div>
 
           <div id="bottom-header-text" className="header-text">
@@ -148,7 +161,18 @@ function App() {
               height='652'
               controls
           /> */}
-          <YoutubeEmbed embedId="rokGy0huYEA"/>
+
+          
+          <div className="video-responsive">
+            <iframe src="https://drive.google.com/file/d/1WSejn_cn0wBwHMu6kRAjRIEsVofsgGtG/preview" allow="autoplay"/>
+          </div>
+          {/* <YoutubeEmbed embedId="rokGy0huYEA"/> */}
+
+          <div className={callToActionPopupClasname}>
+            <p>Join Us Today</p>
+            <button onClick={closeCallToActionPopup}>X</button>
+          </div>
+          
 
           <div className="introduction">
             <p id="introduction-header">NextWave Hackers 💻</p>
@@ -199,7 +223,7 @@ function App() {
               </div>
 
               <p className="r-branch-description" id="branch-description-1">
-                The Website and Development branch  aims to assist students in creating their own portfolios, platforms, and innovative applications by utilizing web development technologies and tools.
+                The Website and Development branch aims to assist students in creating their own portfolios, platforms, and innovative applications by utilizing web development technologies and tools.
               </p>
 
               <img class="l-branch-icon" src={branch1Icon} alt="Branch 1 Icon"/>
@@ -230,12 +254,12 @@ function App() {
 
               <div className="l-branch-block" id="branch-block-4" style={{width:"356px", backgroundColor:"#50008A99"}}>
                 <p style={{width:"200px"}}>
-                  Bloom
+                  Radiance
                 </p>
               </div>
 
               <p className="l-branch-description" id="branch-description-4">
-                The aim of BLOOM is to provide girls with the courage, skills, guidance, and resources to pursue and exceed in traditionally male-dominated STEM fields through events and projects. By providing students with a solid foundation in computer programming concepts and introducing them to Python and APIs, this branch aspires to instigate project-based learning among members.
+                The aim of RADIANCE is to provide girls with the courage, skills, guidance, and resources to pursue and exceed in traditionally male-dominated STEM fields through events and projects. By providing students with a solid foundation in computer programming concepts and introducing them to Python and APIs, this branch aspires to instigate project-based learning among members.
               </p>
 
               <img class="r-branch-icon" src={branch4Icon} alt="Branch 4 Icon" style={{transform:"translateY(-140%)"}}/>
