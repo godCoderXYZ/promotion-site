@@ -312,7 +312,9 @@ function App() {
           <p id="other-inquires-info">
             For other inquiries, feel free to send us an email:
             <br/>
-            <a id="email-link" href="mailto:ps20133177@student.vsa.edu.hk" target="_blank" rel="noreferrer">ps20133177@student.vsa.edu.hk</a> (Chairperson)
+            {/* <a id="email-link" href="mailto:ps20133177@student.vsa.edu.hk" target="_blank" rel="noreferrer">ps20133177@student.vsa.edu.hk</a> (Chairperson) */}
+            <a id="email-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=ps20133177@student.vsa.edu.hk" target="_blank" rel="noreferrer">ps20133177@student.vsa.edu.hk</a> (Chairperson)
+            
           </p>
 
         </div>
