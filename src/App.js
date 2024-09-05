@@ -164,7 +164,7 @@ function App() {
 
           
           <div className="video-responsive">
-            <iframe src="https://drive.google.com/file/d/1WSejn_cn0wBwHMu6kRAjRIEsVofsgGtG/preview" allow="autoplay"/>
+            <iframe src="https://drive.google.com/file/d/1WSejn_cn0wBwHMu6kRAjRIEsVofsgGtG/preview" allow="autoplay" allowFullScreen/>
           </div>
           {/* <YoutubeEmbed embedId="rokGy0huYEA"/> */}
 
