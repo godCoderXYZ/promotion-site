@@ -168,10 +168,10 @@ function App() {
           </div>
           {/* <YoutubeEmbed embedId="rokGy0huYEA"/> */}
 
-          <div className={callToActionPopupClasname}>
+          {/* <div className={callToActionPopupClasname}>
             <p>Join Us Today</p>
             <button onClick={closeCallToActionPopup}>X</button>
-          </div>
+          </div> */}
           
 
           <div className="introduction">
@@ -223,7 +223,7 @@ function App() {
               </div>
 
               <p className="r-branch-description" id="branch-description-1">
-                The Website and Development branch aims to assist students in creating their own portfolios, platforms, and innovative applications by utilizing web development technologies and tools.
+                The Website and Application Development branch aims to assist students in creating their own portfolios, platforms, and innovative applications by utilizing web development technologies and tools.
               </p>
 
               <img class="l-branch-icon" src={branch1Icon} alt="Branch 1 Icon"/>
@@ -235,7 +235,7 @@ function App() {
               </div>
 
               <p className="l-branch-description" id="branch-description-2">
-                The Game Development and Theory branch aims to educate students on the process of designing video games, which are games in the form of interactive computer graphics that can be manipulated by the user, with the purpose of entertaining users.
+                The Game Development and Theory branch offers students the opportunity to express their imagination, creativity, and ideas into something real and tangible, through the process of Game Development, by designing Video Games, participating in Esport and Game Development events and competitions, and collaborating in teams through a project based learning approach.
               </p>
 
               <img class="r-branch-icon" src={branch2Icon} alt="Branch 2 Icon"/>
