@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import React, { useState } from "react"; 
 
@@ -26,7 +27,7 @@ function App() {
   // commented version of headerAnimText is with entities (i.e. &lt; and &gt;)
   //let headerAnimText = [[useState("Become a website developer."), useState("Become a game developer."), useState("Become a data scientist."), useState("Become an engineer."), useState("Become an entrepreneur."), useState("Expand your imagination.")], [useState("Coding is the tool. You are the innovator."), useState("Coding is the tool. You are the creator."), useState("Coding is the tool. You are the designer."), useState("Coding is the tool. You are the limit.")], [useState(" _   _           _ __        __                _   _            _                 "), useState("| \ | | _____  _| |\ \      / /_ ___   _____  | | | | __ _  ___| | _____ _ __ ___ "), useState("|  \| |/ _ \ \/ / __\ \ /\ / / _` \ \ / / _ \ | |_| |/ _` |/ __| |/ / _ \ '__/ __|"), useState("| |\  |  __/&gt;  &lt;| |_ \ V  V / (_| |\ V /  __/ |  _  | (_| | (__|   &lt;  __/ |  \__ \""), useState("|_| \_|\___/_/\_\\__| \_/\_/ \__,_| \_/ \___| |_| |_|\__,_|\___|_|\_\___|_|  |___/")]]
 
-  let headerAnimText = [[useState("Become a website developer. "), useState("Become a game developer. "), useState("Become a data scientist. "), useState("Become an engineer. "), useState("Become an entrepreneur. "), useState("Expand your imagination. ")], [useState("Coding is the tool. You are the innovator. "), useState("Coding is the tool. You are the creator. "), useState("Coding is the tool. You are the designer. "), useState("Coding is the tool. You are the limit. ")], [useState(" _   _           _ __        __                _   _            _                 "), useState("| \\ | | _____  _| |\\ \\      / /_ ___   _____  | | | | __ _  ___| | _____ _ __ ___ "), useState("|  \\| |/ _ \\ \\/ / __\\ \\ /\\ / / _` \\ \\ / / _ \\ | |_| |/ _` |/ __| |/ / _ \\ '__/ __|"), useState('| |\\  |  __/>  <| |_ \\ V  V / (_| |\\ V /  __/ |  _  | (_| | (__|   <  __/ |  \\__ \\'), useState("|_| \\_|\\___/_/\\_\\\\__| \\_/\\_/ \\__,_| \\_/ \\___| |_| |_|\\__,_|\\___|_|\\_\\___|_|  |___/")]]
+  let headerAnimText = [[useState("Become a website developer. "), useState("Become a game developer. "), useState("Become a data scientist. "), useState("Become an engineer. "), useState("Become an entrepreneur. "), useState("Expand your imagination. ")], [useState("Coding is the tool. You are the innovator. "), useState("Coding is the tool. You are the creator. "), useState("Coding is the tool. You are the designer. "), useState("Coding is the tool. You are the limit. ")], [useState(" _   _           _ __        __                _   _            _                 "), useState("| \\ | | _____  _| |\\ \\      / /_ ___   _____  | | | | __ _  ___| | _____ _ __ ___ "), useState("|  \\| |/ _ \\ \\/ / __\\ \\ /\\ / / _` \\ \\ / / _ \\ | |_| |/ _` |/ __| |/ / _ \\ '__/ __|"), useState('| |\\  |  __/>  <| |_ \\ V  V / (_| |\\ V /  __/ |  _  | (_| | (__|   <  __/ |  \\__ \\'), useState("|_| \\_|\\___/_/\\_\\\\__| \\_/\\_/ \\__,_| \\_/ \\___| |_| |_|\\__,_|\\___|_|\\_\\___|_|  |___//")]]
 
   const [callToActionPopupClasname, setCallToActionPopupClassname] = useState("call-to-action-popup-show");
 
@@ -77,6 +78,7 @@ function App() {
   return (
     <div className="App">
       <Analytics />
+      <SpeedInsights />
       <div className="desktop">
 
         <header className="header-section">
